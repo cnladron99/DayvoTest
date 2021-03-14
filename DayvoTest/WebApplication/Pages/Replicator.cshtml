@@ -1,0 +1,38 @@
+﻿@page
+@model WebApplication.wwwroot.ReplicatorModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/replicator.css" />
+
+<div class="flex-container">
+    <div class="flex-item">
+        <p>
+            Input replicator:
+        </p>
+        <input id="inputText" type="text">
+
+        <p>
+            <span><strong id="hasTyped" class="greenText">You have typed something.</strong></span>        
+            <span><strong id="needType" class="redText">You need to type something.</strong></span>
+        </p>
+    </div>
+    <div class="flex-item">
+        <p>
+            You have typed:
+        </p>
+        <p>
+            <span id="typedText"></span>
+        </p>
+        <p>
+            Facts
+        <p>
+            <span>The message is <strong id="totalTextLength">0</strong> long.</span>
+        </p>
+        <p>
+            <span><strong id="consonantCounter"></strong> out of <strong id="characterCounter">0</strong> are consonants, (<strong id="consonantPercentage">0</strong> % of the total).</span>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/replicator.js"></script>
